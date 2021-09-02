@@ -51,6 +51,39 @@ body {
     box-shadow: 0px 20px 23px rgb(0 0 0 / 10%);
 }
 
+.order-summary__hero {
+}
+
+.order-summary__hero > img {
+}
+
+.order-summary__content {
+}
+
+.order-summary__title {
+}
+
+.order-summary__description {
+}
+
+.order-summary__info {
+}
+
+.order-summary__plan {
+}
+
+.btn {
+}
+
+.btn--filled {
+}
+
+.btn--flat {
+}
+
+.btn--underlined {
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
