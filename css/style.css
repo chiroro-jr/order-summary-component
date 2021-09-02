@@ -107,17 +107,35 @@ body {
     display: block;
     text-decoration: none;
     font-weight: 700;
+    font-size: 0.8rem;
     transition: all 0.4s;
 }
 
 .btn--filled {
+    background-color: var(--bright-blue);
+    color: var(--white);
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 0.8em;
+    box-shadow: 0px 13px 14px 0px rgb(0 0 0 / 24%);
+}
+
+.btn--filled:hover {
+    opacity: 0.8;
+    transform: translateY(-3px);
+}
+
+.btn--filled:active {
+    transform: translateY(-1px);
+    opacity: 1;
+    box-shadow: 0px 10px 12px 0px rgb(0 0 0 / 24%);
 }
 
 .btn--flat {
 }
 
 .btn--underlined {
-    font-size: 0.8rem;
     color: var(--bright-blue);
     text-decoration: underline;
 }
