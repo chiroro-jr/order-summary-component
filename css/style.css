@@ -133,6 +133,11 @@ body {
 }
 
 .btn--flat {
+    color: var(--desaturated-blue);
+}
+
+.btn--flat:hover {
+    color: var(--dark-blue);
 }
 
 .btn--underlined {
