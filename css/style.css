@@ -59,27 +59,28 @@ body {
 }
 
 .order-summary__content > * + * {
-    margin-top: 1.6em;
+    margin-top: 1.6rem;
 }
 
 .order-summary__title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 900;
     color: var(--dark-blue);
     text-align: center;
+    margin-bottom: -0.3em;
 }
 
 .order-summary__description {
     color: var(--desaturated-blue);
     text-align: center;
-    line-height: 1.5em;
+    line-height: 1.7em;
     padding: 0 1em;
 }
 
 .order-summary__info {
     width: 100%;
     padding: 1em;
-    border-radius: var(--border-radius);
+    border-radius: 0.8em;
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
