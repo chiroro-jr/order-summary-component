@@ -1,91 +1,101 @@
-# Frontend Mentor - Order summary card
+# Frontend Mentor - Order summary card solution
 
-![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Frontend Mentor - Order summary card solution](#frontend-mentor---order-summary-card-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshots](#screenshots)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
+-   the challenge wass to build out the order summary card component and get it looking as close to the design as possible.
+-   Users should be able to see hover states for interactive elements
 
-Your challenge is to build out this order summary card component and get it looking as close to the design as possible.
+### Screenshots
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+![Desktop screenshot of the order summary card](./images/desktop-screenshot.png)
+![Mobile screenshot of the order summary card](./images/mobile-screenshot.png)
 
-Your users should be able to:
+### Links
 
-- See hover states for interactive elements
+-   Solution URL: [Add solution URL here](https://your-solution-url.com)
+-   Live Site URL: [https://serene-kirch-55d40a.netlify.app/](https://serene-kirch-55d40a.netlify.app/)
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+## My process
 
-## Where to find everything
+### Built with
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+-   Semantic HTML5 markup
+-   CSS custom properties
+-   BEM Methodology
+-   Flexbox
+-   Mobile-first workflow
+-   [Vite](https://vitejs.dev/) - Frontend build tool
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### What I learned
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+1. Whenever you start a new project try, set up your enviroment and all the things you are going to use first. What do I mean by this? Well you need to think about some essential tools you will need to make the process go a bit smooth. For example any build tools you will need. I have found that some tools are a bit hard to integrate into the project once you have moved signficantly through the project. I had some issues with parcel and vite which I think was a result of not setting these up initially. But maybe it was just an edge case.
+2. If you are working with a design system or you have a predifined set of values for things like colors, fonts, and so on, move those into into CSS variables or SCSS variables (if you are working with SCSS) as soon as you start the project. This will help you focus more on the HTML and CSS side of your project rather than constantly switching between your design file and your CSS to check for those values. That context switch may hurt your productivity. Set up those values ahead of time. The only reason to go back your design fine should be to compare your website and that design.
+3. Sometimes you won't have a design file. You may have just an image of the design, which is the case when you are doing Frontend Mentor challenges on a free account. You can still code a website using those images. That is fine. You could also take that as an opportunity to practice some design. Try to recreate that design in an app like [Adobe XD](https://www.adobe.com/products/xd.html) or [Figma](https://www.figma.com/). The process of recreating that design will actually improve your design skills over time. You could also jump into sites like [Behance](https://www.behance.net/) and [Dribble](https://dribbble.com/) and do the same thing. Try to the amazing design works you will find there. If you can code it up. Hopefully overtime this will help you to come up with your own process for code and design.
+4. If you are going to use BEM CSS then you are probably better off using a CSS preprocessor like [SASS/SCSS](https://sass-lang.com/). Repeating the same selector or at least parts of it can get annoying. What do I mean? Use something like the code below.
+    ```css
+    .block {
+        &--modifier {
+            property: value;
+        }
+        &__element1 {
+            property: value;
+        }
+        &__element2 {
+            &--modifier {
+                property: value;
+            }
+        }
+    }
+    ```
+    Instead of something like this:
+    ```css
+    .block {
+        property: value;
+    }
+    .block--modifier {
+        property: value;
+    }
+    .block__element1 {
+        property: value;
+    }
+    .block__element2 {
+        property: value;
+    }
+    .block__element2--modifier {
+        property: value;
+    }
+    ```
+    This may just be a personal preference but I think it will save you a lot of time.
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Continued development
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+I hope to rebuild this component using [Tailwind CSS](https://tailwindcss.com/). I really like the framework and hope to add it to my skillset. In fact I have this idea to do every Frontend Mentor challenge using CSS or SCSS first then use Tailwind CSS. My goal is to implement a challenge using 2 technologies, at least. If the challenge has a need for JavaScript I will first try to implement it using vanilla JavaScript then use a framework like VueJs.
 
-## Building your project
+### Useful resources
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+-   [Next generation frontend tooling with ViteJS](https://www.youtube.com/watch?v=UJypSr8IhKY&t=758s) - This helped me understand the idea behind [Vite](https://vitejs.dev/).
+-   [You Probably Need BEM CSS in Your Life](https://youtu.be/er1JEDuPbZQ) - This helped me understand BEM CSS.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+## Author
 
-## Deploying your project
-
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
-
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+-   Frontend Mentor - [@chiroro-jr](https://www.frontendmentor.io/profile/chiroro-jr)
+-   Twitter - [@chiroro_jr](https://www.twitter.com/chiroro_jr)
