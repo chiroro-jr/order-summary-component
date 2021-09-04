@@ -4,18 +4,18 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Table of contents
 
-- [Frontend Mentor - Order summary card solution](#frontend-mentor---order-summary-card-solution)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshots](#screenshots)
-    - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
-    - [Useful resources](#useful-resources)
-  - [Author](#author)
+-   [Frontend Mentor - Order summary card solution](#frontend-mentor---order-summary-card-solution)
+    -   [Table of contents](#table-of-contents)
+    -   [Overview](#overview)
+        -   [The challenge](#the-challenge)
+        -   [Screenshots](#screenshots)
+        -   [Links](#links)
+    -   [My process](#my-process)
+        -   [Built with](#built-with)
+        -   [What I learned](#what-i-learned)
+        -   [Continued development](#continued-development)
+        -   [Useful resources](#useful-resources)
+    -   [Author](#author)
 
 ## Overview
 
@@ -31,7 +31,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
+-   Solution URL: [https://www.frontendmentor.io/solutions/html-css-bem-methodology-flexbox-vite-mc0j3Cm8Y](https://www.frontendmentor.io/solutions/html-css-bem-methodology-flexbox-vite-mc0j3Cm8Y)
 -   Live Site URL: [https://serene-kirch-55d40a.netlify.app/](https://serene-kirch-55d40a.netlify.app/)
 
 ## My process
