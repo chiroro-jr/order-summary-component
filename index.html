@@ -17,39 +17,37 @@
             href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
             rel="stylesheet"
         /> -->
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/tailwind.css" />
         <title>Frontend Mentor | Order summary card</title>
     </head>
     <body>
         <div class="container">
-            <div class="order-summary">
-                <header class="order-summary__hero">
+            <div class="bg-gray-500">
+                <header>
                     <img
                         src="/images/illustration-hero.svg"
                         alt="cartoon girl listening to music"
                     />
                 </header>
-                <main class="order-summary__content">
-                    <h1 class="order-summary__title">Order Summary</h1>
-                    <p class="order-summary__description">
+                <main>
+                    <h1 class="text-4xl text-red-500">Order Summary</h1>
+                    <p>
                         You can now listen to millions of songs, audiobooks, and
                         podcasts on any device anywhere you like!
                     </p>
-                    <div class="order-summary__info">
+                    <div>
                         <img src="/images/icon-music.svg" alt="music icon" />
-                        <div class="order-summary__plan">
+                        <div>
                             <h2>Annual Plan</h2>
                             <span>$59.99/year</span>
                         </div>
-                        <a class="btn btn--flat btn--underlined" href="#"
-                            >Change</a
-                        >
+                        <a href="#">Change</a>
                     </div>
-                    <a class="btn btn--filled" href="#">Proceed to Payment</a>
-                    <a class="btn btn--flat" href="#">Cancel Order</a>
+                    <a href="#">Proceed to Payment</a>
+                    <a href="#">Cancel Order</a>
                 </main>
             </div>
-            <footer class="attribution">
+            <footer>
                 Challenge by
                 <a
                     href="https://www.frontendmentor.io?ref=challenge"
